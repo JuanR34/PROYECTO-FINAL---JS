@@ -1,0 +1,151 @@
+body{
+  background-color: #e96196;
+  background-image: linear-gradient(315deg, #e96196 0%, #ffffff 104%);
+  }
+  h2.h4 {
+    text-align: center;
+    font-size: 70px;
+    color: rgb(57, 6, 6);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  a.nav-link{
+    color: rgb(21, 20, 20);
+    font-size: 25px;
+  }
+div.card{
+  background-color: #f5e3e6 ;
+}
+button.btn {
+  background-color: black;
+  color: white;
+  font-family: monospace;
+}
+  header, .alert{
+    z-index: 100;
+  }
+  .description{
+    height: 25px;
+    overflow: hidden;
+    transition: height .3s ease-in .3s;
+  }
+  .description:hover{
+    height: 80px;
+  }
+  .carrito{
+    min-height: 80vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .table__productos{
+    display: flex;
+  }
+  .table__productos > img{
+    width: 9rem;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-right: 20px;
+  }
+  .table__cantidad > input{
+    width: 40px;
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+  .hide, .remove{
+    display: none;
+  }
+
+span {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+div.tab-content {
+  margin-left: 30px;
+}
+
+table {
+  background-color: rgb(242, 240, 240);
+  margin-top: 25px;
+}
+
+
+footer {
+  margin-top: 60px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+h6 {
+  font-size: 20px;
+}
+ul.nav-col {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+ul li.ms-3 {
+  list-style: none;
+}
+ul li.ms-3 a.text-muted {
+  width: 80px;
+  height: 80px;
+
+  text-align: center;
+  line-height: 70px;
+  font-size: 15px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 90%;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #fff;
+  z-index: 1;
+}
+ul li.ms-3 a.text-muted svg {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+ul li.ms-3 a.text-muted:hover svg {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+ul li.ms-3 a.text-muted:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+ul li.ms-3 a.text-muted:hover:before {
+  top: 0;
+}
+
+ul li.ms-3:nth-child(1) a:before {
+  background: #55acee;
+}
+
+ul li.ms-3:nth-child(2) a:before {
+  background: #dd4b39;
+}
+
+ul li.ms-3:nth-child(3) a:before {
+  background: #3b5999;
+}
